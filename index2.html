@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>19sep21</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .box{
+                width:280px;
+                height:212px;
+                background-image:url("img/hover2.jpg");
+                background-size:cover;
+                box-shadow:0px 0px 10px 5px rgba(0,0,0,0.2);
+                margin: 250px auto;
+                position:relative;
+                overflow:hidden;
+            }
+            .overlay{
+                width:280px;
+                height:212px;
+                background:rgba(0,0,0,0.5);
+                position:absolute;
+                top:-212px;
+                left:0px;
+                transition-property:all;
+                transition-duration:0.3s;
+                transition-timing-function:ease-out;
+            }
+            .box:hover .overlay{
+                top:0px;
+            }
+            .overlay > a{
+                display:inline-block;
+                height:45px;
+                width:45px;
+                background:#fff;
+                border-radius:45px;
+                text-align:center;
+                line-height:45px;
+                position:absolute;
+                top:81px;
+                left:100px;
+                color:#464646;
+            }
+            .banchor{
+                left: 160px !important;
+            }
+        </style>
+    </head>
+    <body>
+         <div class= "common box">
+             <div class="common overlay">
+                  <a href="#"><i class="fas fa-link"></i></a>
+                  <a class="banchor" href="#"><i class="fas fa-search"></i></a>
+             </div>
+         </div>
+    </body>
+    </html>
